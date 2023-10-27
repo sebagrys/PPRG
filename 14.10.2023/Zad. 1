@@ -5,8 +5,9 @@
 int main()
 {
 	int i, Number, count, x, y;
-	std::cout << "Podaj zakres:";
+	std::cout << "Podaj początek zakresu:";
 	std::cin >> x;
+	std::cout << "Podaj koniec zakresu:";
 	std::cin >> y;
 	Number = x;
 	while (Number <= y)

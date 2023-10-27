@@ -1,0 +1,31 @@
+// ZADANIE 1
+// Napisz program, który wypisze na ekranie wszystkie liczby pierwsze z zadanego zakresu
+
+int main()
+{
+	int i, Number, count, x, y;
+	std::cout << "Podaj zakres:";
+	std::cin >> x;
+	std::cin >> y;
+	Number = x;
+	while (Number <= y)
+	{
+		count = 0;
+		i = 2;
+		while (i <= Number / 2)
+		{
+			if (Number % i == 0)
+			{
+				count++;
+				break;
+			}
+			i++;
+		}
+		if (count == 0 && Number != 1)
+		{
+			std::cout << Number << std::endl;
+		}
+		Number++;
+	}
+	return 0;
+}

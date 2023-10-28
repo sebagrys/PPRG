@@ -14,7 +14,7 @@ int main()
 
 	int gracz = 0;
 	int komputer = 0;
-	bool runda = false;
+	bool runda = true;
 
 	do 
 	{
@@ -42,41 +42,34 @@ int main()
 			cout << "Komputer wybral NOZYCE" << endl;
 		}
 
-		runda = false;
+		runda = true;
 
 		if (gracz == komputer)
 		{
-			runda = true;
 			cout << "REMIS! Zagraj ponownie." << endl;
 		}
 		else if (gracz == kamien && komputer == nozyce)
 		{
-			runda = true;
 			cout << "BRAWO! WYGRALES!" << endl;
 		}
 		else if (gracz == kamien && komputer == papier)
 		{
-			runda = true;
 			cout << "buahhahaha porazka. sprobuj ponownie :)" << endl;
 		}
 		else if (gracz == papier && komputer == kamien)
 		{
-			runda = true;
 			cout << "BRAWO! WYGRALES!" << endl;
 		}
 		else if (gracz == papier && komputer == nozyce)
 		{
-			runda = true;
 			cout << "buauahahahhaha porazka. sprobuj ponownie :)" << endl;
 		}
 		else if (gracz == nozyce && komputer == papier)
 		{
-			runda = true;
 			cout << "BRAWO! WYGRALES!" << endl;
 		}
 		else if (gracz == nozyce && komputer == kamien)
 		{
-			runda = true;
 			cout << "koszmarna porazka. sprobuj ponownie." << endl;
 		}
 

@@ -1,0 +1,27 @@
+// Password game
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string password = "ciasteczka";
+	string guess;
+
+	while (true)
+	{
+		cout << "Podaj haslo: ";
+		cin >> guess;
+
+		if (guess == password)
+		{
+			cout << "Gratulacje! Haslo prawidlowe :)" << endl;
+			break;
+		}
+		else
+		{
+			cout << "Haslo nieprawidlowe. Sprobuj ponownie" << endl;
+		}
+	}
+	return 0;
+}

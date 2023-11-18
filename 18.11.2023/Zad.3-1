@@ -6,7 +6,7 @@ int main()
     int menu;
     while (true)
     {
-        cout << "\n\nWybierz opcje z menu\n1. Oblicz pole kwadratu\n2. Oblicz pole prostokata\n3. Opusc program\n\nWybieram.. ";
+        cout << "\n\nWybierz opcje z menu\n1. Oblicz pole kwadratu\n2. Oblicz pole prostokata\n3. Oblicz pole kola\n4. Oblicz pole trojkata\n5. Opusc program\n\nWybieram.. ";
         cin >> menu;
         switch (menu)
         {
@@ -28,10 +28,25 @@ int main()
             cout << "\nPole tego kwadratu wynosi: " << a * b;
             break;
         }
-        case 3: {
-
+        case 3: 
+        {
+            double a;
+            cout << "\n\nPodaj dlugosc promienia: ";
+            cin >> a;
+            cout << "\nPole tego kola wynosi: Pi" << a * a;
+            break;
         }
-        case 4:return 0;
+        case 4:
+        {
+            double a, b;
+            cout << "\n\nPodaj dlugosc boku: ";
+            cin >> a;
+            cout << "\n\nPodaj dlugosc wysokosci opadajacej na ten bok: ";
+            cin >> b;
+            cout << "\nPole tego trojkata wynosi: " << (a * b) / 2;
+            break;
+        }
+        case 5:return 0;
         }
     }
 }

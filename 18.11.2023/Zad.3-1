@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int menu;
+    while (true)
+    {
+        cout << "\n\nWybierz opcje z menu\n1. Oblicz pole kwadratu\n2. Oblicz pole prostokata\n3. Opusc program\n\nWybieram.. ";
+        cin >> menu;
+        switch (menu)
+        {
+        case 1: 
+        {
+            int a;
+            cout << "\n\nPodaj dlugosc boku kwadratu: ";
+            cin >> a;
+            cout << "\nPole tego kwadratu wynosi: " << a * a;
+            break;
+        }
+        case 2: 
+        {
+            int a, b;
+            cout << "\n\nPodaj dlugosc krotszego boku prostokata: ";
+            cin >> a;
+            cout << "\n\nPodaj dlugosc dluzszego boku prostokata: ";
+            cin >> b;
+            cout << "\nPole tego kwadratu wynosi: " << a * b;
+            break;
+        }
+        case 3: {
+
+        }
+        case 4:return 0;
+        }
+    }
+}

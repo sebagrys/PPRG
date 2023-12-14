@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+void ciag(double pierwszy, double czynnik, int ilosc) 
+{
+	int sumaA = 0;
+	int sumaB = 0;
+	int wyrazA = pierwszy;
+	int wyrazB = pierwszy;
+	for (int i = 0; i < ilosc; i++) 
+	{
+		sumaA += wyrazA;
+		wyrazA += czynnik;
+		sumaB += wyrazB;
+		wyrazB *= czynnik;
+	}
+	cout << endl;
+	cout << "Suma elementow ciagu arytmetycznego: " << sumaA << endl;
+	cout << "Suma elementow ciagu geometrycznego: " << sumaB << endl;
+}
+
+int main()
+{
+	double pierwszy, czynnik;
+	int ilosc;
+	cout << "Podaj pierwszy element ciagu: ";
+	cin >> pierwszy;
+	cout << "Podaj roznice ciagu: ";
+	cin >> czynnik;
+	cout << "Podaj liczbe wyrazow ciagu: ";
+	cin >> ilosc;
+	ciag(pierwszy, czynnik, ilosc);
+}

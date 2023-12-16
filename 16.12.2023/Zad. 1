@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+struct Punkt 
+{
+    double x;
+    double y;
+};
+
+double obliczOdleglosc(Punkt punkt1, Punkt punkt2) 
+{
+    double deltaX = punkt2.x - punkt1.x;
+    double deltaY = punkt2.y - punkt1.y;
+    double odleglosc = std::sqrt(deltaX * deltaX + deltaY * deltaY);
+    return odleglosc;
+}
+
+int main() 
+{
+    Punkt punktA = { 1.0, 2.0 };
+    Punkt punktB = { 4.0, 6.0 };
+
+    double odleglosc = obliczOdleglosc(punktA, punktB);
+
+    std::cout << "Odleglosc miedzy punktem A i punktem B wynosi " << odleglosc << std::endl;
+
+    return 0;
+}
